@@ -1,14 +1,14 @@
-import { useFonts } from 'expo-font';
-import * as SplashScreen from 'expo-splash-screen';
+import Theme from "@theme";
+import { useFonts } from "expo-font";
+import { Stack } from "expo-router/stack";
+import * as SplashScreen from "expo-splash-screen";
 import { useCallback } from "react";
-import { Stack } from 'expo-router/stack';
-import Theme from '@theme';
 
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [fontsLoaded, fontError] = useFonts({
-    'Rocko': require('../assets/fonts/RockoFLF.ttf'),
+    Rocko: require("../assets/fonts/RockoFLF.ttf"),
   });
 
   useCallback(async () => {
@@ -27,8 +27,8 @@ export default function RootLayout() {
         statusBarHidden: false,
         statusBarStyle: "light",
         statusBarColor: Theme.color.primary,
-        headerShown: false
+        headerShown: false,
       }}
     />
-  )
+  );
 }

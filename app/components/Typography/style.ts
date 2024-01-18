@@ -1,7 +1,8 @@
-import styled from 'styled-components/native';
-import Theme from '@theme';
-import type { TextProps } from './type';
-import { css } from 'styled-components';
+import Theme from "@theme";
+import { css } from "styled-components";
+import styled from "styled-components/native";
+
+import type { TextProps } from "./type";
 
 export const Text = styled.Text<TextProps>`
   ${({ variant, color }) => css`

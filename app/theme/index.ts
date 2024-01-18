@@ -1,7 +1,7 @@
 const Theme = {
   color: {
     primary: "#6E73F3",
-    seconday: "#eee"
+    seconday: "#eee",
   },
 
   font: {
@@ -9,7 +9,7 @@ const Theme = {
       family: "Rocko",
       size: "18px",
     },
-  }
+  },
 };
 
 export default Theme;
