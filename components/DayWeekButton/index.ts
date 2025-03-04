@@ -1,1 +1,1 @@
-export { default as DayWeekButton } from "./DayWeekButton";
+export { default } from "./DayWeekButton";

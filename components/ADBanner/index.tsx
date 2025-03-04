@@ -1,1 +1,1 @@
-export { default as ADBanner } from "./ADBanner";
+export { default } from "./ADBanner";

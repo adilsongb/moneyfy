@@ -1,14 +1,5 @@
 import { Colors } from "@/constants/Colors";
-import { StyleSheet, Text, View } from "react-native";
-
-export default function DayWeekbutton() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Seg</Text>
-      <Text style={styles.text}>24</Text>
-    </View>
-  )
-}
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
