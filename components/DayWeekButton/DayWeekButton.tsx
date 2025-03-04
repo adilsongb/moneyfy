@@ -7,7 +7,7 @@ export default function DayWeekbutton() {
       <Text style={styles.text}>Seg</Text>
       <Text style={styles.text}>24</Text>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -17,9 +17,9 @@ const styles = StyleSheet.create({
     height: 65,
     borderRadius: 4,
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   text: {
-    color: "#ffffff"
-  }
+    color: "#ffffff",
+  },
 });

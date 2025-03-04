@@ -1,9 +1,9 @@
-import { DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
+import { Stack } from "expo-router";
+import { StatusBar } from "expo-status-bar";
+import "react-native-reanimated";
 
-import mobileAds from 'react-native-google-mobile-ads';
+import mobileAds from "react-native-google-mobile-ads";
 
 mobileAds().initialize();
 

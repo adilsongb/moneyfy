@@ -6,7 +6,5 @@ export default function UserHeader() {
     <ThemedView>
       <ThemedText>Adilson Gabriel</ThemedText>
     </ThemedView>
-  )
+  );
 }
-
-
