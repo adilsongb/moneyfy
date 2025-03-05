@@ -1,0 +1,51 @@
+export const weekDays = [
+  {
+    shortDayName: "Dom",
+    fullDayName: "Domingo",
+    dayNumber: 23,
+    isSelected: false,
+    isDisabled: false,
+  },
+  {
+    shortDayName: "Seg",
+    fullDayName: "Segunda-feira",
+    dayNumber: 24,
+    isSelected: false,
+    isDisabled: false,
+  },
+  {
+    shortDayName: "Ter",
+    fullDayName: "Terça-feira",
+    dayNumber: 25,
+    isSelected: false,
+    isDisabled: false,
+  },
+  {
+    shortDayName: "Qua",
+    fullDayName: "Quarta-feira",
+    dayNumber: 26,
+    isSelected: true,
+    isDisabled: false,
+  },
+  {
+    shortDayName: "Qui",
+    fullDayName: "Quinta-feira",
+    dayNumber: 27,
+    isSelected: false,
+    isDisabled: true,
+  },
+  {
+    shortDayName: "Sex",
+    fullDayName: "Sexta-feira",
+    dayNumber: 28,
+    isSelected: false,
+    isDisabled: true,
+  },
+  {
+    shortDayName: "Sab",
+    fullDayName: "Sábado",
+    dayNumber: 29,
+    isSelected: false,
+    isDisabled: true,
+  },
+];
