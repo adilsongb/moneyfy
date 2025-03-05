@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
   },
   default: {
     fontFamily: "Rubik-Regular",
-    fontSize: 16,
+    fontSize: 18,
     lineHeight: 24,
   },
   defaultSemiBold: {

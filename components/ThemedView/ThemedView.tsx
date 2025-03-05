@@ -1,7 +1,16 @@
-import { View, type ViewProps } from "react-native";
+import { View } from "react-native";
 
-export type ThemedViewProps = ViewProps;
+import { getRestPropsStyle } from "@/utils/get";
+import type { ThemedViewProps } from "./ThemedView.type";
 
-export default function ThemedView({ style, ...rest }: ThemedViewProps) {
-  return <View style={[style]} {...rest} />;
+export default function ThemedView({
+  style,
+  children,
+  ...rest
+}: ThemedViewProps) {
+  return (
+    <View {...rest} style={[style, getRestPropsStyle(rest)]}>
+      {children}
+    </View>
+  );
 }
