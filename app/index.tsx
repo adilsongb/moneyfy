@@ -13,6 +13,18 @@ export default function Page() {
           <ThemedText color="primary">Go to Home</ThemedText>
         </Pressable>
       </Link>
+
+      <Link href="/modal/hello" asChild>
+        <Pressable>
+          <ThemedText color="primary">Open modal 1</ThemedText>
+        </Pressable>
+      </Link>
+
+      <Link href="/modal/bye" asChild>
+        <Pressable>
+          <ThemedText color="primary">Open modal 2</ThemedText>
+        </Pressable>
+      </Link>
     </ScreenView>
   );
 }
