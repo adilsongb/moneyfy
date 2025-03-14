@@ -13,6 +13,8 @@ export type BaseElementStyleProps = {
 
   borderRadius?: BorderRadiuTypes;
 
+  borderColor?: string;
+
   m?: SpacingTypes;
   mr?: SpacingTypes;
   ml?: SpacingTypes;

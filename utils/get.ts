@@ -25,6 +25,10 @@ export function getRestPropsStyle(
       borderRadius: tokens.borders.radius[props.borderRadius],
     }),
 
+    ...(props.borderColor && {
+      borderColor: getColor(props.borderColor as ColorsName),
+    }),
+
     ...(props && { width: props.width }),
     ...(props.height && { height: props.height }),
 
