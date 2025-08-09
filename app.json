@@ -38,6 +38,14 @@
           "resizeMode": "contain",
           "backgroundColor": "#7E40D6"
         }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "1.9.25"
+          }
+        }
       ]
     ],
     "experiments": {
