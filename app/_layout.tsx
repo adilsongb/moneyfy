@@ -5,9 +5,9 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 import "react-native-reanimated";
 
-import mobileAds from "react-native-google-mobile-ads";
+// import mobileAds from "react-native-google-mobile-ads";
 
-mobileAds().initialize();
+// mobileAds().initialize();
 
 export default function RootLayout() {
   return (
