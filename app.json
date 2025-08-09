@@ -59,6 +59,12 @@
         "projectId": "90f674d9-2af9-426c-baae-00b4bcec8160"
       }
     },
-    "owner": "adilsongb"
+    "owner": "adilsongb",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/90f674d9-2af9-426c-baae-00b4bcec8160"
+    }
   }
 }
