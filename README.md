@@ -1,50 +1,96 @@
-# Welcome to your Expo app 👋
+# Moneyfy
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Bem-vindo ao **Moneyfy**! Este é um aplicativo mobile desenvolvido com **Expo** e **React Native**, focado em gerenciamento financeiro. O projeto utiliza o **Expo Router** para navegação baseada em arquivos.
 
-## Get started
+## 🚀 Tecnologias
 
-1. Install dependencies
+-   [React Native](https://reactnative.dev/)
+-   [Expo](https://expo.dev/)
+-   [Expo Router](https://docs.expo.dev/router/introduction/)
+-   [TypeScript](https://www.typescriptlang.org/)
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Pré-requisitos
 
-2. Start the app
+Antes de começar, certifique-se de ter instalado em sua máquina:
 
-   ```bash
-    npx expo start
-   ```
+-   [Node.js](https://nodejs.org/) (recomendado versão LTS)
+-   [Yarn](https://yarnpkg.com/) ou npm
+-   [Git](https://git-scm.com/)
 
-In the output, you'll find options to open the app in a
+Recomendado para builds na nuvem:
+-   [EAS CLI](https://github.com/expo/eas-cli): `npm install -g eas-cli`
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📦 Instalação
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1.  Clone o repositório:
+    ```bash
+    git clone <URL_DO_REPOSITORIO>
+    cd moneyfy
+    ```
 
-## Get a fresh project
+2.  Instale as dependências:
+    ```bash
+    yarn install
+    # ou
+    npm install
+    ```
 
-When you're ready, run:
+## 🏃‍♂️ Rodando Localmente (Desenvolvimento)
+
+Para iniciar o servidor de desenvolvimento:
 
 ```bash
-npm run reset-project
+yarn start
+# ou
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Dica: Você pode limpar o cache se tiver problemas: `npx expo start -c`.
 
-## Learn more
+### Opções de Execução:
+-   **Expo Go**: Escaneie o QR Code exibido no terminal com o app Expo Go (Android/iOS).
+-   **Emulador Android**: Pressione `a` no terminal (requer Android Studio configurado).
+-   **Simulador iOS**: Pressione `i` no terminal (requer Xcode/macOS).
+-   **Web**: Pressione `w` no terminal.
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🏗️ Build e Deploy com EAS
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Este projeto está configurado para usar o **EAS Build** (`eas.json`).
 
-## Join the community
+### 1. Build de Desenvolvimento (Development Build)
+Ideal para testar bibliotecas nativas que não são suportadas no Expo Go padrão.
 
-Join our community of developers creating universal apps.
+```bash
+eas build --profile development --platform android
+# ou
+eas build --profile development --platform ios
+```
+Após o build, instale o APK/App no seu dispositivo ou emulador. Aponte o servidor de desenvolvimento (`yarn start`) para este build customizado.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 2. Build de Preview (Internal Distribution)
+Para compartilhar com testadores internos sem publicar na loja.
+
+```bash
+eas build --profile preview --platform android
+# ou
+eas build --profile preview --platform ios
+```
+
+### 3. Build de Produção (Loja)
+Para gerar os binários finais (.aab para Play Store, .ipa para App Store).
+
+```bash
+eas build --profile production --platform android
+# ou
+eas build --profile production --platform ios
+```
+
+---
+
+## 📂 Estrutura de Pastas
+
+-   **app/**: Contém as rotas e telas da aplicação (File-based routing).
+-   **assets/**: Imagens, fontes e outros arquivos estáticos.
+-   **components/**: Componentes reutilizáveis da UI.
+-   **constants/**: Constantes globais (cores, configurações).
+-   **utils/**: Funções utilitárias.
