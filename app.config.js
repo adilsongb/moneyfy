@@ -37,6 +37,18 @@ const getIcon = () => {
     return './assets/images/icon.png';
 };
 
+const getAdaptiveIcon = () => {
+    if (IS_DEV) {
+        return './assets/images/adaptive-icon-dev.png';
+    }
+
+    if (IS_PREVIEW) {
+        return './assets/images/adaptive-icon-preview.png';
+    }
+
+    return './assets/images/adaptive-icon.png';
+};
+
 export default {
     expo: {
         name: getAppName(),
@@ -51,6 +63,10 @@ export default {
             supportsTablet: true,
         },
         android: {
+            adaptiveIcon: {
+                foregroundImage: getAdaptiveIcon(),
+                backgroundColor: '#7E40D6',
+            },
             edgeToEdgeEnabled: true,
             package: getUniqueIdentifier(),
         },
