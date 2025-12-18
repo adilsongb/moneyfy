@@ -27,7 +27,7 @@ export default function RootLayout() {
             }}
           />
         </Stack>
-        <StatusBar style="inverted" />
+        <StatusBar style="dark" />
       </ThemeProvider>
     </GestureHandlerRootView>
   );
