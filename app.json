@@ -16,6 +16,7 @@
         "foregroundImage": "./assets/images/adaptive-icon-light.png",
         "backgroundColor": "#7E40D6"
       },
+      "edgeToEdgeEnabled": true,
       "package": "com.adilsongb.moneyfy"
     },
     "plugins": [
@@ -39,14 +40,7 @@
           "backgroundColor": "#7E40D6"
         }
       ],
-      [
-        "expo-build-properties",
-        {
-          "android": {
-            "kotlinVersion": "1.9.25"
-          }
-        }
-      ]
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
@@ -59,12 +53,6 @@
         "projectId": "90f674d9-2af9-426c-baae-00b4bcec8160"
       }
     },
-    "owner": "adilsongb",
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
-    "updates": {
-      "url": "https://u.expo.dev/90f674d9-2af9-426c-baae-00b4bcec8160"
-    }
+    "owner": "adilsongb"
   }
 }
