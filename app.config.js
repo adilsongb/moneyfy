@@ -25,13 +25,25 @@ const getAppName = () => {
     return 'Moneyfy';
 };
 
+const getIcon = () => {
+    if (IS_DEV) {
+        return './assets/images/icon-dev.png';
+    }
+
+    if (IS_PREVIEW) {
+        return './assets/images/icon-preview.png';
+    }
+
+    return './assets/images/icon.png';
+};
+
 export default {
     expo: {
         name: getAppName(),
         slug: 'moneyfy',
         version: '1.0.0',
         orientation: 'portrait',
-        icon: './assets/images/icon.png',
+        icon: getIcon(),
         scheme: 'moneyfy',
         userInterfaceStyle: 'automatic',
         newArchEnabled: true,
@@ -39,10 +51,6 @@ export default {
             supportsTablet: true,
         },
         android: {
-            adaptiveIcon: {
-                foregroundImage: './assets/images/adaptive-icon-light.png',
-                backgroundColor: '#7E40D6',
-            },
             edgeToEdgeEnabled: true,
             package: getUniqueIdentifier(),
         },
